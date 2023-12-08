@@ -1,11 +1,10 @@
-# Very short description of the package
+# Medical Terms
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/msc/medical-terms.svg?style=flat-square)](https://packagist.org/packages/msc/medical-terms)
 [![Total Downloads](https://img.shields.io/packagist/dt/msc/medical-terms.svg?style=flat-square)](https://packagist.org/packages/msc/medical-terms)
 ![GitHub Actions](https://github.com/msc/medical-terms/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
-
+This package provides a seamless integration for medical department, services, and symptoms functionalities within Laravel applications. It offers models, migrations, and relationships to effortlessly manage medical-related data, facilitating connections between departments, services, and symptoms.
 ## Installation
 
 You can install the package via composer:
