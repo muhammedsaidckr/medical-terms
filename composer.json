@@ -1,0 +1,58 @@
+{
+    "name": "msc/medical-terms",
+    "description": "This package provides a seamless integration for medical department, services, and symptoms functionalities within Laravel applications. It offers models, migrations, and relationships to effortlessly manage medical-related data, facilitating connections between departments, services, and symptoms.",
+    "keywords": [
+        "msc",
+        ""
+    ],
+    "homepage": "https://github.com/msc/medical-terms",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Muhammed Said Çakır",
+            "email": "muhammedsaidckr@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0",
+        "spatie/laravel-translatable": "^6.5",
+        "spatie/laravel-sluggable": "^3.5",
+        "laravel/scout": "^10.6"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "../../vendor/phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Msc\\MedicalTerms\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Msc\\MedicalTerms\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Msc\\MedicalTerms\\MedicalTermsServiceProvider"
+            ],
+            "aliases": {
+                "MedicalTerms": "Msc\\MedicalTerms\\MedicalTermsFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
